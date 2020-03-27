@@ -1,0 +1,35 @@
+<div>
+    <ul>
+    {{#each post}}
+      <li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      {{!-- navbar-brand makes the link font larger --}}
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="navbar-brand" href="#">Entry <span class="sr-only">(current)</span></a>
+              </li>
+{{!-- need to dynamically change these hrefs to make the selected tab "current" without refreshing               --}}
+      {{!-- once we move past the entry step, we'll change the href of the entry to go back to that step (same with the gallery)  --}}
+      {{!-- we'll remove the "disabled" class from these after an entry has been saved --}}
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Map</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        {{id}} {{tripEntry}}
+{{!-- Try to look into a way that our tripEntry (if very long) will default to only showing the first 3-5 lines (maybe with a clickable extender/minimizer), so each entry doesnt take up too much room         --}}
+        <button class="editEntry" data-id="{{id}}">
+          Edit this entry
+        </button>
+      </li>
+    {{/each}}
+  </ul>
+</div>
