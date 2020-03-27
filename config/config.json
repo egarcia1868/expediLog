@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "password1",
+    "database": "expediLogDB",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
