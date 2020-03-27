@@ -1,0 +1,33 @@
+h1 {
+  color: #f30;
+}
+
+body {
+  background-color: #fc6;
+}
+
+.burger {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.greyback {
+  background-color: darkgray;
+  border: 1px solid slategray;
+  padding-left: 5px;
+}
+
+.pic {
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  display: block;
+  min-height: 40px;
+}
+
+.devourIt {
+  float: right;
+}

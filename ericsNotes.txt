@@ -1,0 +1,63 @@
+Untitled Project
+
+Intro page, with demo, instructions, introduction and login.
+
+app to look at world map to add points of interest-places.
+
+We'll need to find an api that will give us a lat and long from an address.  (mapquest)(open geocoding)()
+
+I need to set up a jaws db for our project
+
+we would want a way to sort out a single person's posts as well as a way to see all posts about a specific post.
+
+
+
+FE - Me and Mia 
+
+BE - Shawn and Caitlin 
+
+LOGIN PAGE:
+
+User Name:
+
+Password:
+
+USER PAGE:
+
+"Hello"
+
+{User account}
+
+ENTRY:  "Entry info" - save entry/submit post button/s  ---  GALLERY: add pics/add caption to pics (drag to reorganize, or move up/down option) --- MAP:  place pins on map of country/actual locations?
+
+NOTE TITLE
+DATE OF ENTRY
+(See Mia's pic)
+
+HOME PAGE (index.html):
+
+                                  <user login>
+
+"Welcome to expediLog!"
+<search user> <search location> <search post>
+
+
+
+VIEWER PAGE (viewer.handlebars):
+
+Maybe a choice of:
+POST PAGE     /     MAP PAGE
+
+Post page would have a cascading list of posts (to be organized by newest?oldest?month?location?)
+Map page would have a map of pins of places visited.
+
+
+
+ideas:
+
+"search for" bar at top
+  author
+  location
+  post title
+
+login form in the top bar
