@@ -1,0 +1,4 @@
+productionDBname= <-- production name
+productionDBpass= <-- production password
+productionDBhost= <-- production host
+productionDB= <-- production database
