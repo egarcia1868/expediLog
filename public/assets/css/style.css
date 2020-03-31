@@ -31,6 +31,48 @@
   font-size: 150%;
 }
 
+.entry {
+  width: 100%;
+  min-height:  300px;
+  background-image: url("../images/vintage-paper.jpeg");
+  background-repeat: none;
+  background-size: cover;
+  text-align: left;
+}
+
+.entry p {
+  font-family: 'Playfair Display', serif;
+  text-indent: 50px;
+  font-size: 70%;
+  line-height: 1.3;
+  margin: 5px 10px
+}
+
+#mapid {
+  margin: 1% 7%;
+  height: 400px;
+  width: 86%; 
+}
+
+.viewerTitle {
+  padding-top: 1%;
+  font-size: 60px!important;
+}
+
+.collapsible {
+  background: white;
+  border: none;
+  width: 100%;
+  outline: none!important;
+  cursor: pointer;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 /* #username {
   font-size: 150%;
 } */
@@ -114,8 +156,29 @@ input {
 }
 
 .up2 {
-  margin-right: 74px
+  margin-right: 80px
 }
+
+.navbar-brand {
+  font-size: 110%;
+  
+}
+
+.entryLog {
+  border: solid lightgray 1px;
+  padding: 5px;
+  margin-bottom: 20px
+}
+
+.entryTitle {
+  font-size: 30px;
+  font-family: 'Marck Script', cursive;
+}
+
+/* .nav-item {
+  margin-left: 48%!important;
+  margin-right: 48%!important;
+} */
 
 .pixa {
   position: absolute;
