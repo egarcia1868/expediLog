@@ -34,7 +34,7 @@ NOTE TITLE
 DATE OF ENTRY
 (See Mia's pic)
 
-HOME PAGE (index.html):
+HOME PAGE (welcome.html):
 
                                   <user login>
 
