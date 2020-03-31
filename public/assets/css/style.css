@@ -1,9 +1,62 @@
-/* .contents {
-padding-top: 50%;
+.contents {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  opacity: 0.9;
+}
+
+#rememberMe {
+  position: relative;
+  left: 47%;
+}
+/* h1 {
+  position: relative;
+  left: 50%;
+  transform: translateX(-45%);
+  padding-left: 13%;
+  display: inline;
+  
+  height: 50px;
 } */
+
+.top {
+  padding-bottom: 5px;
+}
+
+.welcome {
+  /* text-align: center; */
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Marck Script', cursive;
+  padding-left: 13%;
+  font-size: 150%;
+}
+
+/* #username {
+  font-size: 150%;
+} */
+
+.QaI {
+  height: 90px;
+  /* float: left; */
+}
 
 /* ^^^^  UNCOMMENT THIS OUT AND SEE WHAT HAPPENS TO THE WELCOME.HTML PAGE*/
 
+.imgBackground {
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
 
 body {
   /* min-width: 100%;
@@ -12,7 +65,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  /* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; */
   font-size: 20.5px;
   /* padding: 20px; */
   text-align: center;
@@ -23,6 +76,7 @@ form {
   margin: 0 auto;
   width: 350px;
   padding: 30px 20px;
+  background-color: white
 }
 
 
@@ -33,11 +87,34 @@ input {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
-.login {
+.loginPage {
+  font-family: 'Marck Script', cursive;
+  font-size: 120%;
+  text-align: center;
+}
+
+.loginLinks {
   float: right;
   margin: 10px 10px 0 0;
+  font-family: 'Marck Script', cursive;
+  font-size: 25px;
+  display: block;
+  text-decoration: none;
+}
+
+.up1, .up2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.up2 {
+  margin-right: 74px
 }
 
 .pixa {
@@ -54,12 +131,12 @@ button:hover {
 /* Extra style for the cancel button (red) */
 .cancelbtn {
   width: auto;
-  padding: 10px 18px;
+  padding: 5px 18px;
   background-color: #f44336;
 }
-/* 
-.welcome {
-  margin-top: 100px;
+
+/* .welcome {
+  
 } */
 
 /* Center the avatar image inside this container */
@@ -69,11 +146,11 @@ button:hover {
 }
 
 /* Avatar image */
-img.avatar {
+/* img.avatar {
   width: 10%;
   height: 30%;
   border-radius: 50%;
-}
+} */
 
 /* Add padding to containers */
 .container {
@@ -81,14 +158,32 @@ img.avatar {
 }
 
 /* The "Forgot password" text */
-span.psw {
+/* span.psw {
   float: right;
-  padding-top: 16px;
+  padding-top: 37px;
+} */
+
+p.psw {
+  margin-bottom: 0;
 }
+
+/* .button {
+  background-color: #e4d899;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+} */
+
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-  span.psw {
+  p.psw {
     display: block;
     float: none;
   }
