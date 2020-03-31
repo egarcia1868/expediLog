@@ -1,6 +1,38 @@
 let locationSearch = ["Alamo", "Golden Gate Bridge", "Grand Canyon", "AT&T Stadium"]; // This will be the array of our log locations
 let userSearch = []; // This will be the array of our usernames
 
+let mymap = L.map('mapid').setView([37.0902, -95.7129], 5);
+
+L.tileLayer(
+  "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+  {
+    attribution:
+      'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: "mapbox/streets-v11",
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken:
+      "pk.eyJ1Ijoic2hhd24yMjBhIiwiYSI6ImNrNnY0MnAycjBnM2UzbnBhNTF3dm8ycm8ifQ.aKQXbriGCk9DpMsks6Cwpw"
+  }
+).addTo(mymap);
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+
 autocomplete(document.getElementById("location"), locationSearch);
 
 function autocomplete(inp, arr) {

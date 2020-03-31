@@ -1,35 +1,45 @@
 <div>
-    <ul>
-    {{#each post}}
-      <li>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      {{!-- navbar-brand makes the link font larger --}}
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="navbar-brand" href="#">Entry <span class="sr-only">(current)</span></a>
-              </li>
-{{!-- need to dynamically change these hrefs to make the selected tab "current" without refreshing               --}}
-      {{!-- once we move past the entry step, we'll change the href of the entry to go back to that step (same with the gallery)  --}}
-      {{!-- we'll remove the "disabled" class from these after an entry has been saved --}}
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Map</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <p class="entryTitle viewerTitle"> User Whoever's adventures!</p>
+  <div id="mapid"></div>
+  <ul>
+  {{#each post}}
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10"> 
+        
         {{id}} {{tripEntry}}
-{{!-- Try to look into a way that our tripEntry (if very long) will default to only showing the first 3-5 lines (maybe with a clickable extender/minimizer), so each entry doesnt take up too much room         --}}
-        <button class="editEntry" data-id="{{id}}">
-          Edit this entry
-        </button>
-      </li>
-    {{/each}}
+        
+        
+        <li class="entryLog">
+          <p class="entryTitle">Month/Day/Year  "Trip to Wherever"</p>
+          {{!-- navbar-brand makes the link font larger --}}
+          <ul class="nav nav-tabs nav-fill">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Entry <span class="sr-only">(current)</span></a>
+            </li>
+  {{!-- need to dynamically change these hrefs to make the selected tab "current" without refreshing               --}}
+    {{!-- once we move past the entry step, we'll change the href of the entry to go back to that step (same with the gallery)  --}}
+    {{!-- we'll remove the "disabled" class from these after an entry has been saved --}}
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+          </ul>
+          <div class="entry entryTitle">
+            <p>     Dispassionate extraterrestrial observer prime number emerged into consciousness hearts of the stars hundreds of thousands kindling the energy hidden in matter. Permanence of the stars concept of the number one descended from astronomers a mote of dust suspended in a sunbeam gathered by gravity take root and flourish. Made in the interiors of collapsing stars how far away gathered by gravity the sky calls to us are creatures of the cosmos vanquish the impossible.
+            </p>
+            <p>Tendrils of gossamer clouds realm of the galaxies vastness is bearable only through love light years explorations Drake Equation. Kindling the energy hidden in matter something incredible is waiting to be known laws of physics the only home we've ever known with pretty stories for which there's little good evidence with pretty stories for which there's little good evidence. Rich in heavy atoms citizens of distant epochs emerged into consciousness how far away with pretty stories for which there's little good evidence two ghostly white figures in coveralls and helmets are soflty dancing and billions upon billions upon billions upon billions upon billions upon billions upon.
+            </p>
+          </div>
+      
+  {{!-- Try to look into a way that our tripEntry (if very long) will default to only showing the first 3-5 lines (maybe with a clickable extender/minimizer), so each entry doesnt take up too much room         --}}
+        </li>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  {{/each}}
   </ul>
 </div>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+<script type="text/javascript" src="assets/js/expedilog.js"></script>
