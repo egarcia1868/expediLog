@@ -1,7 +1,7 @@
-module.exports = {
+{
   "development": {
     "username": "root",
-    "password": "password1",
+    "password": null,
     "database": "expediLogDB",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -16,11 +16,7 @@ module.exports = {
     "operatorsAliases": false
   },
   "production": {
-    "username": process.env.productionDBname,
-    "password": process.env.productionDBpass,
-    "database": process.env.productionDB,
-    "host": process.env.productionDBhost,
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }
