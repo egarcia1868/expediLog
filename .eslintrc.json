@@ -1,45 +1,22 @@
 {
-  "env": {
-      "browser": true,
-      "commonjs": true,
-      "node": true
-  },
-  "rules": {
-      "no-duplicate-case":"error",
-      "no-empty":"error",
-      "no-extra-semi":"error",
-      "no-func-assign": "error",
-      "no-irregular-whitespace":"error",
-      "no-unreachable": "error",
-      "curly": "error",
-      "dot-notation": "error",
-      "eqeqeq": "error",
-      "no-empty-function": "error",
-      "no-multi-spaces": "error",
-      "no-mixed-spaces-and-tabs": "error",
-      "no-trailing-spaces": "error",
-      "default-case": "error",
-      "no-fallthrough": "error",
-      "no-unused-vars": "error",
-      "no-use-before-define": "error",
-      "no-redeclare": "error",
-      "camelcase": "error",
-      "brace-style": "error",
-      "indent": [
-          "error",
-          2
-      ],
-      "linebreak-style": [
-          "error",
-          "unix"
-      ],
-      "quotes": [
-          "error",
-          "backtick"
-      ],
-      "semi": [
-          "error",
-          "always"
-      ]
-  }
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "ignorePatterns": ["models/index.js", "node_modules"],
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "no-console": "off",
+        "prettier/prettier": "warn",
+        "func-names": "off",
+        "no-undef": "off",
+        "no-restricted-syntax": "off",
+        "no-unused-vars": "warn",
+        "no-plusplus": "off",
+        "no-restricted-globals": "off",
+        "no-use-before-define": "off"
+    }
 }
